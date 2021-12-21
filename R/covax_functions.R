@@ -45,7 +45,7 @@ get_locations <- function(lat, lng, fromDate = NA, doseNumber, vaccineData, sear
   fromDate <- as.character(fromDate)
 
   doseNumber <- as.numeric(doseNumber)
-  if (!doseNumber %in% c(1,2)) stop ("Parameter `doseNumber` must be an integer value of 1 or 2.")
+  if (!doseNumber %in% c(1,2,3)) stop ("Parameter `doseNumber` must be an integer value of 1, 2 or 3.")
 
   url <- "https://api.covaxonbooking.ca/public/locations/search"
 
